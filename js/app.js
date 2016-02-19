@@ -31,7 +31,7 @@ $(document).ready(function() {
 $(document)
   .keydown(function(e){
   if(e.keyCode == 88){
-    playHadouken();
+    playKruder();
     $('.ryu-ready').hide();
     $('.ryu-throwing').hide();
     $('.ryu-still').hide();
@@ -51,4 +51,10 @@ function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
+}
+
+function playKruder () {
+  $('#kruder')[0].volume = 0.5;
+  $('#kruder')[0].load();
+  $('#kruder')[0].play();
 }
